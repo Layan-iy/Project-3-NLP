@@ -174,7 +174,7 @@ all_client_accuracies = []
 
 
 
-train_reviews, train_labels, test_reviews, test_labels = load_imdb_dataset()
+train_reviews, train_labels, test_reviews, test_labels = load_custom_dataset()
 
 for num_clients in client_numbers:
     print(f"\nRunning federated learning with {num_clients} clients")
