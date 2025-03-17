@@ -1,56 +1,65 @@
 # Federated Learning for Movie Review Classification
 
-## Objectif du projet
-Ce projet met en œuvre un **modèle d’apprentissage fédéré** pour la **classification des critiques de films**, basé sur le **Large Movie Review Dataset (IMDB)**. L'objectif principal est de comparer l'approche **d'apprentissage fédéré** à l'approche **d'apprentissage centralisé**, en évaluant leurs performances, leurs implications sur la confidentialité des données et les coûts de communication.
+## Project Objective
+This project implements a **federated learning model** for **movie review classification**, based on the **Large Movie Review Dataset (IMDB)**. The main objective is to compare the **federated learning approach** with the **centralized learning approach**, evaluating their performance, implications for data privacy, and communication costs.
 
-### **Apprentissage fédéré vs Apprentissage centralisé :**
-- **Apprentissage fédéré** : Les données ne sont pas centralisées, chaque client entraîne un modèle localement et envoie uniquement les mises à jour du modèle. Cela permet de préserver la confidentialité des données et de mieux gérer la scalabilité.
-- **Apprentissage centralisé** : Toutes les données sont envoyées à un serveur central pour l’entraînement, ce qui soulève des problèmes de confidentialité et peut être plus coûteux en termes de communication.
+### **Federated Learning vs Centralized Learning:**
+- **Federated Learning**: The data is not centralized; each client trains a model locally and only sends model updates. This helps preserve data privacy and manage scalability better.
+- **Centralized Learning**: All data is sent to a central server for training, which raises privacy concerns and can be more costly in terms of communication.
 
-Ce projet permet d'**évaluer l'impact de l’apprentissage fédéré** sur la précision du modèle tout en réduisant les risques associés à la centralisation des données.
-
----
-
-## ⚙️ Technologies utilisées
-- **Python** 
-- **Pandas, NumPy** (Manipulation et prétraitement des données)
-- **Scikit-learn** (Modèles de classification)
-- **TensorFlow / PyTorch** (Apprentissage machine)
-- **Flower** (Framework d’apprentissage fédéré)
-- **Matplotlib, Seaborn** (Visualisation des résultats)
+This project aims to **evaluate the impact of federated learning** on model accuracy while reducing the risks associated with centralizing data.
 
 ---
 
-## 🗂️ Données utilisées
-📍 **Dataset : Large Movie Review Dataset (IMDB)**  
-- **25 000 critiques de films** pour l'entraînement  
-- **25 000 critiques de films** pour le test  
-- **Objectif** : Prédire si une critique est **positive ou négative**
-
-📎 **Référence du dataset** : [IMDB Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)  
-
-Les critiques sont extraites sous forme de **texte brut** et utilisées pour entraîner un modèle de classification **supervisé**.
+##  Technologies Used
+- **Python**  
+- **Pandas, NumPy** (Data manipulation and preprocessing)
+- **Scikit-learn** (Classification models)
+- **TensorFlow / PyTorch** (Machine learning)
+- **Flower** (Federated learning framework)
+- **Matplotlib, Seaborn** (Visualization of results)
 
 ---
 
-## 📑 Présentation du projet
-Dans le dossier **`docs/`**, tu trouveras un fichier de présentation **`Presentation_Federated_Learning.pptx`** qui fournit une vue d'ensemble détaillée du projet. Cette présentation aborde les aspects suivants :
+## Data Used
+**Dataset: Large Movie Review Dataset (IMDB)**  
+- **25,000 movie reviews** for training  
+- **25,000 movie reviews** for testing  
+- **Objective**: Predict whether a review is **positive or negative**
 
-- **L’apprentissage fédéré** : Une explication complète de la méthode utilisée pour entraîner un modèle de machine learning sans centraliser les données.
-- **La comparaison entre l’apprentissage fédéré et l’apprentissage centralisé** : Le projet explore les différences clés entre ces deux méthodes, notamment en termes de confidentialité, d'efficacité et de coûts de communication.
-- **Technologies utilisées** : Un aperçu des outils et des bibliothèques employés dans le projet.
-- **Les résultats** : Les performances du modèle et l'analyse des bénéfices en termes de confidentialité grâce à l'apprentissage fédéré.
+📎 **Dataset Reference**: [IMDB Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)  
 
-Tu peux consulter et télécharger cette présentation pour mieux comprendre les objectifs et la mise en œuvre du projet.
-
-📎 **Lien vers la présentation** : [Présentation du projet (PPT)](docs/Presentation_Federated_Learning.pptx)
+The reviews are provided in **raw text** and are used to train a **supervised classification model**.
 
 ---
 
-## 🚀 Exécution du projet
+## Project Presentation
+In the **`docs/`** folder, you will find a presentation file **`Presentation_Federated_Learning.pptx`** that provides a detailed overview of the project. This presentation covers the following aspects:
 
-### 1️⃣ Cloner le dépôt
-Clone le projet depuis GitHub en utilisant la commande suivante :
+- **Federated Learning**: A comprehensive explanation of the method used to train a machine learning model without centralizing the data.
+- **Comparison between Federated Learning and Centralized Learning**: The project explores the key differences between these two methods, particularly in terms of privacy, efficiency, and communication costs.
+- **Technologies Used**: An overview of the tools and libraries employed in the project.
+- **Results**: The model's performance and the analysis of privacy benefits through federated learning.
+
+You can view and download this presentation to better understand the project’s objectives and implementation.
+
+📎 **Link to the presentation**: [Project Presentation (PPT)](docs/Presentation_Federated_Learning.pptx)
+
+---
+
+## Project Execution
+
+### Clone the Repository
+Clone the project from GitHub using the following command:
 ```bash
 git clone https://github.com/Layan-iy/Project-3-NLP.git
 cd Project-3-NLP
+```
+Install dependencies
+```bash
+pip install -r requirements.txt
+```
+Run the training
+```bash
+python Python_Code.py
+```
