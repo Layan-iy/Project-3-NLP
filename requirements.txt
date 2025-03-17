@@ -59,3 +59,8 @@ urllib3==2.3.0
 yarl==1.18.3
 matplotlib
 scikit-learn
+seaborn
+tensorflow
+tensorflow_datasets
+
+
