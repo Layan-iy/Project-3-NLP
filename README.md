@@ -23,7 +23,10 @@ Ce principe est **très utilisé en entreprise pour préserver la confidentialit
  **Dataset : Large Movie Review Dataset (IMDB)**  
 - **25 000 critiques de films** pour l'entraînement  
 - **25 000 critiques de films** pour le test  
-- **Objectif** : Prédire si une critique est **positive ou négative**  
+- **Objectif** : Prédire si une critique est **positive ou négative**
+
+📎 **Référence du dataset** : [IMDB Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)  
+
 
 Les critiques sont extraites sous forme de **texte brut** et utilisées pour entraîner un modèle de classification **supervisé**.
 
